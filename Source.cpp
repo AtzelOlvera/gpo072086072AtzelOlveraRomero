@@ -11,7 +11,7 @@
 using namespace std;
 
 string busqgen, busqclas, * nomb, * clasif, * genero, * carac, * descrip, * consola;//Se declaran las variables como string para poder escribir mas caracteres y que sean letras.
-int  *codicom,* codigo, * fecha, registros, desi;//Se declara las variables de codigo y año de lanzamiento como enteros.
+int  * codigo, * fecha, registros, desi;//Se declara las variables de codigo y año de lanzamiento como enteros.
 float* iva, * pretot, * preuni;//Se utiliza un float para poder ingresar precios con decimales.
 
 void menu();
@@ -85,6 +85,7 @@ void menu()
 
     default:
         printf("\t /////****-Ingrese una opci%cn correcta, porfavor-****/////\n", 162);//El default nos dira un mensaje el cual nos pedira otra vez poner el numero de la opcion.
+        return menu();
         break;
     }
 }
